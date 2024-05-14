@@ -1,5 +1,5 @@
-import Menu from "./menu";
-import Search from "./search";
+import Menu from "./Menu.jsx";
+import Search from "./Search.jsx";
 import "../../styles/navBar.css";
 import TiendaIcon from "../../assets/icons/TiendaIcon.jsx";
 

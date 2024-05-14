@@ -1,4 +1,4 @@
-import Carrito from "./carrito";
+import Carrito from "./Carrito";
 
 const Menu = () => {
   return (
