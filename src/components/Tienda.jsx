@@ -5,7 +5,9 @@ const Tienda = () => {
     return (
         <div>
             <NavBar />
-            <ItemListContainer />
+            <div className="body-container">
+            <ItemListContainer products="Guia de Ecuador"/>
+            </div>
         </div>
     )
 }

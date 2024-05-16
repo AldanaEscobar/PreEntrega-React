@@ -6,7 +6,7 @@ const Search = () => {
       <div className="d-flex align-items-center">
         <Form className="d-flex search-container">
           <Form.Control
-            type="search"
+            type="Search"
             placeholder="Search"
             className="me-2 search-input"
             aria-label="Search"
