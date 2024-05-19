@@ -1,5 +1,5 @@
 import ItemListContainer from "./cards/ItemListContainer";
-import NavBar from "./navBar/NavBar";
+import NavBar from "./navBar/navBar";
 
 const Tienda = () => {
     return (
