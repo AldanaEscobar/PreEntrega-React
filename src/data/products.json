@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Guia de Ecuador",
+        "precio": 10,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Recorre Ecuador como nomade digital"
+    },
+    {
+        "nombre": "Nomade Digital: Inical",
+        "precio": 10,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Inicia tu vida como nomade digital"
+    },
+    {
+        "nombre": "NGuia definitiva de Peru",
+        "precio": 10,
+        "imagen": "https://placeholder.pics/svg/150",
+        "descripcion": "Recorre Peru como nomade digital"
+    }
+]

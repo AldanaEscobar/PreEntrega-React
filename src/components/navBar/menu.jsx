@@ -16,7 +16,8 @@ const Menu = () => {
         </li>
         <li className="navbar-menu-item">
            <a className="a"> <Carrito />
-           <div className="notification">{}</div> </a>
+           <div className="notification">1</div>
+           </a>
         </li>
       </ul>
     </div>

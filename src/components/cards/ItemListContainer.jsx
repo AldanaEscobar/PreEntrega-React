@@ -1,4 +1,5 @@
 import '../../styles/ItemListContainer.css';
+import ItemCounter from '../ItemCounter';
 
 function ItemListContainer({ products }) {
   return (
@@ -7,6 +8,7 @@ function ItemListContainer({ products }) {
       <div className='card'>
       {products}
       </div>
+      <ItemCounter />
     </div>
   )
 }

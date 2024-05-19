@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-text {
+    font-family: 'Basic';
+    color: #274441;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.counter-button {
+    width: 38px;
+    border-radius: 10px;
+    background-color: #FA8576;
+    width: 100px;
+    height: 28px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border: #FA9237 1px solid;
+    color: #274441;
+}
+
+.counter-button:hover{
+    background-color: #FA9237;
+    border: #FA8576 1px solid;
+    color: white;
+}

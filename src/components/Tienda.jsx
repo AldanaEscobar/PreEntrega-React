@@ -1,3 +1,4 @@
+import ItemCounter from "./ItemCounter";
 import ItemListContainer from "./cards/ItemListContainer";
 import NavBar from "./navBar/NavBar";
 
@@ -7,6 +8,7 @@ const Tienda = () => {
             <NavBar />
             <div className="body-container">
             <ItemListContainer products="Guia de Ecuador"/>
+            {/* <ItemCounter /> */}
             </div>
         </div>
     )
