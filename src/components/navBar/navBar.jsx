@@ -1,5 +1,4 @@
 import Menu from "./Menu.jsx";
-import Search from "./Search.jsx";
 import "../../styles/navBar.css";
 import TiendaIcon from "../../assets/icons/TiendaIcon.jsx";
 
@@ -15,9 +14,6 @@ const NavBar = () => {
           <TiendaIcon />
           </div>
         </a>
-        <div>
-          <Search />
-        </div>
       </div>
       <div>
         <Menu />

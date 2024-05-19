@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Basic&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Basic&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 /* MOBILE */
 .general-navbar {
-    background-color: #274441;
-    border-radius: 0 0 10px 10px;
+margin: 0 16px 0 16px;
+    border-bottom: #274441 solid 1px;
+    box-shadow: 0 10px 10px -10px #274441;
+
 }
 
 .branch-container {
@@ -15,18 +15,24 @@
 }
 
 .branch-name {
-    color: #fff;
+    color: #274441;
     top: 1.5rem;
     left: 1.5rem;
-    font-size: 10px;
+    font-size: 15px;
     letter-spacing: 0.1rem;
-    font-family: 'victor mono', monospace;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
+    font-weight: 520;
+}
+
+.branch-icon path{
+    fill: #274441;
+    stroke: #274441;
 }
 
 .search-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 22px 11px 6px;
     gap: 6px;
@@ -63,15 +69,20 @@
     margin: 6px;
     position: sticky;
     top: 40px;
-    color: #fff;
-    font-family: 'andada pro';
+    color: #274441;
+    font-family: 'Times New Roman', Times, serif;
     padding-bottom: 11px;
 }
 
 .navbar-menu-item {
     list-style-type: none;
     font-size: 14px;
-    color: #fff;
+    color: #274441;
+}
+
+.navbar-menu-item svg {
+    width: 30px;
+    height: 20px;
 }
 
 a:-webkit-any-link {
@@ -82,6 +93,7 @@ a:-webkit-any-link {
 .ul{
 	display:flex;
 	flex-wrap:wrap;
+    justify-content: space-evenly;
 }
 
 .li{
@@ -136,17 +148,23 @@ a:-webkit-any-link {
     width: 14px;
     justify-content: center;
     position: absolute;
-    top: 0px;
-    left: 35px;
+    top: -5px;
+    left: 20px;
 }
 
 
 /* TABLET */
 
 @media screen and (min-width: 600px) {
+    .general-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
 
     .search-section {
         justify-content: space-evenly;
+        padding: 0;
     }
 
     .search-container {
@@ -162,12 +180,26 @@ a:-webkit-any-link {
     }
 
     .branch-name {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .navbar-menu-container {
-        justify-content: space-between;
         margin: 6px 12px;
+        padding-bottom: 0;
+    }
+
+    .ul {
+        gap: 30px;
+    }
+
+    .navbar-menu-item svg {
+        width: 40px;
+        height: 22px;
+    }
+
+    .notification {
+        top: -5px;
+        left: 26px;
     }
 
 }
@@ -175,12 +207,13 @@ a:-webkit-any-link {
 /* DESKTOP */
 
 @media screen and (min-width: 1000px) {
+    .general-navbar {
+        justify-content: space-around;
+    }
+
     .branch-name {
-        position: fixed;
         z-index: 2;
-        top: 1.5rem;
-        left: 1.5rem;
-        font-size: 16px;
+        font-size: 17px;
         letter-spacing: 0.3rem;
     }
     .search-input {
