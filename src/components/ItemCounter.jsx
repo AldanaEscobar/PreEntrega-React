@@ -11,8 +11,6 @@ export const ItemCounter = () => {
     setNumberItem(numberItem - 1);
   }
 
-  console.log(numberItem)
-
   return (
    <div className="counter">
     <div className="counter-text">Quiero {numberItem} guias!</div>

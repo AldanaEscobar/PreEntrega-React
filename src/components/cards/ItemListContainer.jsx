@@ -1,14 +1,14 @@
 import '../../styles/ItemListContainer.css';
-import ItemCounter from '../ItemCounter';
+import ItemList from './itemList';
+import '../../styles/itemlist.css';
 
-function ItemListContainer({ products }) {
+function ItemListContainer() {
   return (
     <div>
-      <h2 className="text center">PROXIMAMENTE!</h2>
-      <div className='card'>
-      {products}
+      <h2 className='title'>Guias:</h2>
+      <div className='cards'>
+      <ItemList />
       </div>
-      <ItemCounter />
     </div>
   )
 }

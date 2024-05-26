@@ -1,4 +1,4 @@
-import Menu from "./Menu.jsx";
+import Menu from "./menu.jsx";
 import "../../styles/navBar.css";
 import TiendaIcon from "../../assets/icons/TiendaIcon.jsx";
 
