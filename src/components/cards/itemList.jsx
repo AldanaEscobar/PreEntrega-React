@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-// import { useState, useEffect } from "react";
-// import productsData from "../../data/products.json";
-// import ItemCounter from "../ItemCounter";
+
 import "../../styles/itemlist.css";
 import "../../styles/counter.css";
 import Item from "./Item";

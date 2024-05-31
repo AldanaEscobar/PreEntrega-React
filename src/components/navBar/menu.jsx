@@ -1,4 +1,3 @@
-// import ItemCounter from "../ItemCounter";
 import { Link,  NavLink } from 'react-router-dom';
 import { useState } from "react";
 import Carrito from "./carrito.jsx";
