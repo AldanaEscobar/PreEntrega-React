@@ -1,51 +1,17 @@
-import { useState, useEffect } from "react";
-import productsData from "../../data/products.json";
+/* eslint-disable react/prop-types */
+// import { useState, useEffect } from "react";
+// import productsData from "../../data/products.json";
 // import ItemCounter from "../ItemCounter";
 import "../../styles/itemlist.css";
 import "../../styles/counter.css";
+import Item from "./Item";
 
-const ItemList = () => {
-  let [products, setProducts] = useState([]);
-
-  const showProducts = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(productsData);
-      }, 2000);
-    });
-  };
-
-  useEffect(() => {
-    showProducts()
-      .then((res) => {
-        setProducts(res);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, []);
-  console.log(products);
-
+const ItemList = ({ products }) => {
   return (
     <>
       {products.length > 0 ? (
-        products.map((products) => {
-          return (
-            <>
-              <div className="card" key={products.id}>
-                <h2 className="card-title">{products.name}</h2>
-                <p className="card-description">{products.description}</p>
-                <p className="card-price"> {products.price} USD</p>
-                {products.image && <img src={products.image} alt={products.name} />}
-                <div className="button-container">
-                  <button className="counter-button">Ver mas</button>
-                </div>
-              </div>
-              {/* <div>
-                <ItemCounter />
-              </div> */}
-            </>
-          );
+        products.map((product) => {
+          return <Item key={product.id} product={product} />;
         })
       ) : (
         <div className="load-container">
@@ -61,15 +27,3 @@ const ItemList = () => {
 };
 
 export default ItemList;
-
-{
-  /* <div class="cards">
-
-<figure class="card">
-
-  <img src="https://www.linkpicture.com/q/1_1484.jpg" />
-
-  <figcaption>Dota 2</figcaption>
-
-</figure> */
-}

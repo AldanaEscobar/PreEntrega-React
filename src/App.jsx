@@ -1,15 +1,16 @@
-import Tienda from './components/Tienda'
-import './styles/homePage.css';
+import ItemListContainer from "./components/cards/ItemListContainer";
+import NavBar from "./components/navBar/navBar";
+import "./styles/homePage.css";
 
 function App() {
-
   return (
     <>
       <div className="app-container">
-        <Tienda />
+        <NavBar />
+        <ItemListContainer />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
