@@ -2,7 +2,7 @@
 
 import "../../styles/itemlist.css";
 import "../../styles/counter.css";
-import Item from "./Item";
+import Item from "./item.jsx";
 
 const ItemList = ({ products }) => {
   return (

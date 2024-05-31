@@ -12,7 +12,7 @@ const Item = ({ product }) => {
         <p className="card-price"> {product.price} USD</p>
         {product.image && <img src={product.image} alt={product.name} />}
         <div className="button-container">
-          <Link className="counter-button" to={`/item/${product.id}`}>Ver mas</Link>
+          <Link className="default-button buttton-1" to={`/item/${product.id}`}><span>Ver mas</span></Link>
         </div>
       </div>
     </>
