@@ -5,12 +5,14 @@ import "../../styles/counter.css";
 import productsData from "../../data/products.json";
 
 const ItemDetailContainer = () => {
-  let { itemId } = useParams();
   let [product, setProduct] = useState(undefined);
+  let { itemId } = useParams();
 
   useEffect(() => {
-    setProduct(productsData.find((prod) => prod.id === parseInt(itemId)));
+    setProduct(productsData.find((prod) => prod.id === itemId));
   }, [itemId]);
+
+  console.log(itemId);
 
   return (
     <>

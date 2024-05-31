@@ -5,7 +5,8 @@
         "price": 10,
         "image": "https://kittiaroundtheworld.com/wp-content/uploads/2023/11/Pailon-del-Diablo-view-from-the-Top-Viewpoint.jpg",
         "description": "Recorre Ecuador como nomade digital",
-        "longDescription" : ""
+        "longDescription" : "",
+        "category" : "ecuador"
     },
     {
         "id": "G-NDI",
@@ -13,7 +14,8 @@
         "price": 10,
         "image": "https://static.platzi.com/media/user_upload/Nomada-digital-da8b2ecb-ffb1-4127-a3fc-b9ca49e6d8ed.jpg",
         "description": "Inicia tu vida como nomade digital",
-        "longDescription" : ""
+        "longDescription" : "",
+        "category" : "nomadedigital"
     },
     {
         "id": "G-PE",
@@ -21,7 +23,8 @@
         "price": 10,
         "image": "https://content.skyscnr.com/m/6e3cd168391dd764/original/GettyImages-526212233.jpg?crop=1224px:647px&position=attention",
         "description": "Recorre Peru como nomade digital",
-        "longDescription" : ""
+        "longDescription" : "",
+        "category" : "peru"
     },
     {
         "id": "G-BO",
@@ -29,7 +32,8 @@
         "price": 5,
         "image": "https://i0.wp.com/alizswonderland.com/wp-content/uploads/2020/05/day-trip-to-Isla-del-Sol-Bolivia-AlizsWonderland-f.jpg?fit=1000%2C1000&ssl=1",
         "description": "Recorre Peru como nomade digital",
-        "longDescription" : ""
+        "longDescription" : "",
+        "category" : "bolivia"
     },
     {
         "id": "G-UY",
@@ -37,7 +41,8 @@
         "price": 5,
         "image": "https://media.traveler.es/photos/613769d1bae07f0d8a492eda/master/w_1600%2Cc_limit/3684.jpg",
         "description": "Recorre Peru como nomade digital",
-        "longDescription" : ""
+        "longDescription" : "",
+        "category" : "uruguay"
     }
 ]
 

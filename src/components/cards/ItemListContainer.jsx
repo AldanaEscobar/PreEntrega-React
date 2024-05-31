@@ -3,9 +3,11 @@ import '../../styles/ItemListContainer.css';
 import ItemList from './itemList';
 import '../../styles/itemlist.css';
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer() {
   let [products, setProducts] = useState([]);
+  const category = useParams().categoryId;
 
   const showProducts = () => {
     return new Promise((resolve) => {
@@ -18,13 +20,15 @@ function ItemListContainer() {
   useEffect(() => {
     showProducts()
       .then((res) => {
-        setProducts(res);
+        if(category) {
+          setProducts(res.filter((product) => product.category === category));
+        } else {
+        setProducts(res);}
       })
       .catch((err) => {
         console.error(err);
       });
-  }, []);
-  console.log(products);
+  }, [category]);
 
   return (
     <div className="body-container">

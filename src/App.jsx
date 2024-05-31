@@ -3,6 +3,7 @@ import ItemListContainer from "./components/cards/ItemListContainer";
 import NavBar from "./components/navBar/navBar";
 import "./styles/homePage.css";
 import ItemDetailContainer from "./components/cards/itemDetailContainer";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-          <Route path="/*" />
+          <Route path="/*"element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
