@@ -34,3 +34,12 @@
     border: #FA8576 1px solid;
     color: white;
 }
+
+.link-button {
+    font-family: 'Basic';
+    font-size: 16px;
+}
+
+.link-button:hover {
+    font-weight: bold;
+}

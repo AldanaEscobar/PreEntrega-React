@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "../../styles/itemlist.css";
 import "../../styles/counter.css";
+import "../../styles/itemDetail.css";
 import productsData from "../../data/products.json";
 
 const ItemDetailContainer = () => {
@@ -18,10 +19,17 @@ const ItemDetailContainer = () => {
     <>
       {product ? (
         <div className="detail-container">
-          <h2>{product.name}</h2>
-          <p>{product.longdescription}</p>
-          <p>{product.price} USD</p>
+          <div className="detail-description">
+          <h2 className="title">{product.name}</h2>
+          <p className="produt-description">{product.longDescription}</p>
+          <div className="price-container">
+          <p className="card-price">{product.price} USD</p>
+          <Link className="default-button buttton-1" to={`/item/${product.id}`}><span>Es para mi!</span></Link>
+          </div>
+          </div>
+          <div className="detail-image">
           {product.image && <img src={product.image} alt={product.name} />}
+          </div>
         </div>
       ) : (
         <div className="load-container">

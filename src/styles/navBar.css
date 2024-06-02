@@ -13,6 +13,11 @@
   gap: 6px;
 }
 
+.branch-name:hover {
+  font-weight: 600;
+}
+
+
 .branch-name {
   color: #274441;
   top: 1.5rem;
@@ -84,8 +89,7 @@
   height: 20px;
 }
 
-a:-webkit-any-link {
-  color: #fff;
+.button-default:-webkit-any-link {
   text-decoration: none;
 }
 
@@ -97,6 +101,11 @@ a:-webkit-any-link {
 
 .li {
   list-style: none;
+  color:#274441;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color:#274441;
 }
 
 .a {
@@ -136,6 +145,10 @@ a:-webkit-any-link {
   width: 50%;
   transform: translateX(-100%);
 }
+
+/* .active {
+  font-weight: 700 ;
+} */
 
 .notification {
   font-weight: bold;
@@ -276,4 +289,8 @@ a:-webkit-any-link {
 .dropdown-item:hover:after {
   width: 50%;
   transform: translateX(-100%);
+}
+
+.dropdown-item a:-webkit-any-link {
+  color: #fff;
 }

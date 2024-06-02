@@ -27,10 +27,10 @@ const Menu = () => {
           )}
           </li>
         <li className="navbar-menu-item li">
-        <NavLink to="" className="a" activeclassname="active">SERVICIOS</NavLink>
+        <NavLink to="/proximamente" className="a" activeclassname="active">SERVICIOS</NavLink>
         </li>
         <li className="navbar-menu-item">
-        <NavLink to="" className="a" activeclassname="active">BLOG</NavLink>
+        <NavLink to="/proximamente" className="a" activeclassname="active">BLOG</NavLink>
         </li>
         <li className="navbar-menu-item">
            <NavLink className="a"> <Carrito />

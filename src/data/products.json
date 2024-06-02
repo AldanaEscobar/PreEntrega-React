@@ -1,48 +1,182 @@
 [
     {
         "id": "G-EC",
-        "name": "Guia de Ecuador",
+        "name": "Ecuador: Paraíso Natural para Nómadas Digitales",
         "price": 10,
         "image": "https://kittiaroundtheworld.com/wp-content/uploads/2023/11/Pailon-del-Diablo-view-from-the-Top-Viewpoint.jpg",
-        "description": "Recorre Ecuador como nomade digital",
-        "longDescription" : "",
-        "category" : "ecuador"
+        "description": "Explora Ecuador como un nómada digital aventurero.",
+        "longDescription": "Descubre los encantos de Ecuador mientras trabajas desde sus impresionantes paisajes. Esta guía te lleva a través de los rincones más hermosos del país, desde las playas del Pacífico hasta las majestuosas montañas de los Andes, ideal para nómadas digitales que buscan combinar trabajo y naturaleza.",
+        "category": "ecuador"
+    },
+    {
+        "id": "G-EC-1",
+        "name": "Cómo Conseguir el Departamento Perfecto en Ecuador",
+        "price": 8,
+        "image": "https://example.com/ecuador-apartment.jpg",
+        "description": "Encuentra tu hogar ideal en Ecuador.",
+        "longDescription": "Esta guía te proporciona todos los consejos y trucos necesarios para encontrar el departamento perfecto en Ecuador. Aprende sobre las mejores zonas, los precios más competitivos y los servicios que debes buscar para vivir cómodamente mientras trabajas de manera remota.",
+        "category": "ecuador"
+    },
+    {
+        "id": "G-EC-2",
+        "name": "Las Mejores Playas de Ecuador para Trabajar y Relajarse",
+        "price": 7,
+        "image": "https://example.com/ecuador-beach.jpg",
+        "description": "Descubre las playas perfectas para nómadas digitales.",
+        "longDescription": "Explora las playas más impresionantes de Ecuador donde puedes trabajar y relajarte al mismo tiempo. Esta guía te llevará a través de destinos costeros ideales para nómadas digitales que buscan sol, arena y una buena conexión a internet.",
+        "category": "ecuador"
+    },
+    {
+        "id": "G-EC-3",
+        "name": "Ecuador: Aventuras en la Naturaleza para Nómadas Digitales",
+        "price": 9,
+        "image": "https://example.com/ecuador-nature.jpg",
+        "description": "Aventuras naturales mientras trabajas remotamente.",
+        "longDescription": "Si te encanta la naturaleza y trabajas de manera remota, esta guía es para ti. Descubre rutas de senderismo, parques nacionales y otras aventuras al aire libre en Ecuador, diseñadas para nómadas digitales que desean explorar y trabajar en entornos naturales.",
+        "category": "ecuador"
     },
     {
         "id": "G-NDI",
-        "name": "Nomade Digital: Inical",
+        "name": "Comienza tu Vida de Nómada Digital",
         "price": 10,
         "image": "https://static.platzi.com/media/user_upload/Nomada-digital-da8b2ecb-ffb1-4127-a3fc-b9ca49e6d8ed.jpg",
-        "description": "Inicia tu vida como nomade digital",
-        "longDescription" : "",
-        "category" : "nomadedigital"
+        "description": "Tu primer paso hacia la libertad laboral.",
+        "longDescription": "Esta guía es el recurso definitivo para quienes desean iniciar su viaje como nómadas digitales. Aprende sobre las mejores prácticas, herramientas esenciales y destinos recomendados para empezar a trabajar de manera remota mientras disfrutas de un estilo de vida libre y lleno de aventuras.",
+        "category": "nomadedigital"
+    },
+    {
+        "id": "G-NDI-1",
+        "name": "Trabajar en la Montaña: Guía para Nómadas Digitales",
+        "price": 9,
+        "image": "https://example.com/mountain-work.jpg",
+        "description": "Vive y trabaja en las montañas.",
+        "longDescription": "Si tu sueño es vivir en la montaña y trabajar remotamente, esta guía te mostrará cómo hacerlo realidad. Descubre las mejores montañas para establecer tu oficina remota, las comodidades que debes considerar y cómo mantener un equilibrio entre trabajo y naturaleza.",
+        "category": "nomadedigital"
+    },
+    {
+        "id": "G-NDI-2",
+        "name": "Destinos Urbanos para Nómadas Digitales",
+        "price": 7,
+        "image": "https://example.com/urban-nomad.jpg",
+        "description": "Las mejores ciudades para nómadas digitales.",
+        "longDescription": "Explora las ciudades más vibrantes y amigables para nómadas digitales. Esta guía te llevará a través de destinos urbanos que ofrecen una excelente infraestructura, comunidades activas de nómadas y múltiples oportunidades de networking y entretenimiento.",
+        "category": "nomadedigital"
+    },
+    {
+        "id": "G-NDI-3",
+        "name": "Cómo Balancear Trabajo y Aventura como Nómada Digital",
+        "price": 8,
+        "image": "https://example.com/balance-work-adventure.jpg",
+        "description": "Encuentra el equilibrio perfecto entre trabajo y aventura.",
+        "longDescription": "Descubre estrategias y consejos para mantener un equilibrio saludable entre tu trabajo remoto y la exploración de nuevos destinos. Esta guía te ayudará a maximizar tu productividad mientras disfrutas de aventuras increíbles en diferentes partes del mundo.",
+        "category": "nomadedigital"
     },
     {
         "id": "G-PE",
-        "name": "Guia definitiva de Peru",
+        "name": "Perú: Aventura y Trabajo en Perfecta Armonía",
         "price": 10,
         "image": "https://content.skyscnr.com/m/6e3cd168391dd764/original/GettyImages-526212233.jpg?crop=1224px:647px&position=attention",
-        "description": "Recorre Peru como nomade digital",
-        "longDescription" : "",
-        "category" : "peru"
+        "description": "Vive y trabaja en el mágico Perú.",
+        "longDescription": "Sumérgete en la cultura y belleza de Perú mientras trabajas remotamente. Esta guía ofrece un recorrido por los destinos más inspiradores del país, desde la histórica Machu Picchu hasta los vibrantes mercados de Lima, diseñados para nómadas digitales que buscan un equilibrio perfecto entre trabajo y exploración.",
+        "category": "peru"
+    },
+    {
+        "id": "G-PE-1",
+        "name": "Encontrar tu Departamento Ideal en Perú",
+        "price": 8,
+        "image": "https://example.com/peru-apartment.jpg",
+        "description": "Encuentra el hogar perfecto en Perú.",
+        "longDescription": "Descubre cómo encontrar el departamento ideal para ti en Perú. Esta guía te ayudará a conocer los mejores barrios, precios accesibles y consejos prácticos para vivir cómodamente mientras trabajas de manera remota en este hermoso país.",
+        "category": "peru"
+    },
+    {
+        "id": "G-PE-2",
+        "name": "Perú: Destinos Naturales para Trabajar y Explorar",
+        "price": 9,
+        "image": "https://example.com/peru-nature.jpg",
+        "description": "Los mejores destinos naturales para nómadas digitales.",
+        "longDescription": "Explora los increíbles destinos naturales de Perú mientras trabajas remotamente. Desde el Amazonas hasta el Altiplano, esta guía te llevará a lugares impresionantes donde puedes equilibrar tu trabajo con aventuras inolvidables en la naturaleza.",
+        "category": "peru"
+    },
+    {
+        "id": "G-PE-3",
+        "name": "Perú Urbano: Las Mejores Ciudades para Nómadas Digitales",
+        "price": 7,
+        "image": "https://example.com/peru-urban.jpg",
+        "description": "Las ciudades más vibrantes de Perú para trabajar remotamente.",
+        "longDescription": "Descubre las ciudades más acogedoras y dinámicas de Perú para nómadas digitales. Esta guía te mostrará las mejores opciones urbanas con infraestructuras sólidas, comunidades de expatriados y múltiples oportunidades para trabajar y disfrutar de la vida urbana.",
+        "category": "peru"
     },
     {
         "id": "G-BO",
-        "name": "Guia definitiva de Copacabana",
+        "name": "Copacabana y la Isla del Sol: Joyas de Bolivia",
         "price": 5,
         "image": "https://i0.wp.com/alizswonderland.com/wp-content/uploads/2020/05/day-trip-to-Isla-del-Sol-Bolivia-AlizsWonderland-f.jpg?fit=1000%2C1000&ssl=1",
-        "description": "Recorre Peru como nomade digital",
-        "longDescription" : "",
-        "category" : "bolivia"
+        "description": "Descubre Copacabana y sus maravillas.",
+        "longDescription": "Explora la serenidad de Copacabana y la mística Isla del Sol mientras trabajas desde cualquier lugar. Esta guía te mostrará los secretos mejor guardados de Bolivia, proporcionando consejos y recomendaciones para nómadas digitales que buscan inspiración en cada rincón.",
+        "category": "bolivia"
+    },
+    {
+        "id": "G-BO-1",
+        "name": "Cómo Conseguir Alojamiento en Copacabana",
+        "price": 4,
+        "image": "https://example.com/bolivia-apartment.jpg",
+        "description": "Encuentra el alojamiento ideal en Copacabana.",
+        "longDescription": "Esta guía te ayudará a encontrar el alojamiento perfecto en Copacabana, Bolivia. Con consejos sobre las mejores áreas, precios y servicios disponibles, podrás instalarte cómodamente mientras disfrutas de la tranquilidad y belleza de este lugar único.",
+        "category": "bolivia"
+    },
+    {
+        "id": "G-BO-2",
+        "name": "Bolivia: Naturaleza y Trabajo para Nómadas Digitales",
+        "price": 6,
+        "image": "https://example.com/bolivia-nature.jpg",
+        "description": "Trabaja remotamente mientras exploras la naturaleza boliviana.",
+        "longDescription": "Descubre cómo puedes trabajar remotamente y al mismo tiempo explorar la impresionante naturaleza de Bolivia. Desde el Salar de Uyuni hasta la selva amazónica, esta guía te llevará a los mejores destinos naturales para nómadas digitales.",
+        "category": "bolivia"
+    },
+    {
+        "id": "G-BO-3",
+        "name": "Cultura y Vida Urbana en Bolivia para Nómadas Digitales",
+        "price": 5,
+        "image": "https://example.com/bolivia-urban.jpg",
+        "description": "Explora la cultura urbana de Bolivia mientras trabajas remotamente.",
+        "longDescription": "Sumérgete en la vibrante cultura urbana de Bolivia con esta guía. Aprende sobre las mejores ciudades para nómadas digitales, con consejos sobre dónde trabajar, comer y disfrutar de la vida local, todo mientras mantienes tu productividad.",
+        "category": "bolivia"
     },
     {
         "id": "G-UY",
-        "name": "Guia definitiva de Uruguay",
+        "name": "Uruguay: Tranquilidad y Productividad",
         "price": 5,
         "image": "https://media.traveler.es/photos/613769d1bae07f0d8a492eda/master/w_1600%2Cc_limit/3684.jpg",
-        "description": "Recorre Peru como nomade digital",
-        "longDescription" : "",
-        "category" : "uruguay"
+        "description": "Vive y trabaja en el corazón de Uruguay.",
+        "longDescription": "Uruguay ofrece un refugio tranquilo y pintoresco para nómadas digitales. Desde sus playas serenas hasta su vibrante vida cultural, esta guía te llevará a través de los mejores lugares para establecer tu base de trabajo remoto mientras disfrutas de todo lo que Uruguay tiene para ofrecer.",
+        "category": "uruguay"
+    },
+    {
+        "id": "G-UY-1",
+        "name": "Guía para Encontrar Alojamiento en Uruguay",
+        "price": 4,
+        "image": "https://example.com/uruguay-apartment.jpg",
+        "description": "Encuentra el lugar perfecto para vivir en Uruguay.",
+        "longDescription": "Descubre cómo encontrar el alojamiento ideal en Uruguay. Esta guía te ofrece consejos prácticos sobre las mejores zonas, los precios del mercado y qué buscar en un departamento para vivir cómodamente mientras trabajas remotamente.",
+        "category": "uruguay"
+    },
+    {
+        "id": "G-UY-2",
+        "name": "Las Mejores Playas de Uruguay para Nómadas Digitales",
+        "price": 6,
+        "image": "https://example.com/uruguay-beach.jpg",
+        "description": "Disfruta de las playas de Uruguay mientras trabajas remotamente.",
+        "longDescription": "Explora las playas más hermosas de Uruguay y encuentra el equilibrio perfecto entre trabajo y relax. Esta guía te mostrará los mejores destinos costeros con buenas conexiones a internet y un ambiente ideal para nómadas digitales.",
+        "category": "uruguay"
+    },
+    {
+        "id": "G-UY-3",
+        "name": "Cultura y Vida Urbana en Uruguay para Nómadas Digitales",
+        "price": 5,
+        "image": "https://example.com/uruguay-urban.jpg",
+        "description": "Vive la vida urbana en Uruguay mientras trabajas remotamente.",
+        "longDescription": "Descubre las mejores ciudades de Uruguay para nómadas digitales. Esta guía te llevará a través de los centros urbanos más vibrantes y culturales del país, con consejos sobre dónde trabajar, comer y disfrutar de la vida local.",
+        "category": "uruguay"
     }
 ]
-
