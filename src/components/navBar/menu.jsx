@@ -18,6 +18,7 @@ const Menu = () => {
           </NavLink>
           {dropdownVisible && (
             <ul className="dropdown-menu">
+              <li className="dropdown-item"><Link to="/category/bolivia" className="">Bolivia</Link></li>
               <li className="dropdown-item"><Link to="/category/ecuador" className="">Ecuador</Link></li>
               <li className="dropdown-item"><Link to="/category/peru" className="">Peru</Link></li>
               <li className="dropdown-item"><Link to="/category/uruguay" className="">Uruguay</Link></li>
