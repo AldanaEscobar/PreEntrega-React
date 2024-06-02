@@ -1,0 +1,12 @@
+.footer-styles {
+    border-top: 0.5px solid #ffb26f;
+    color: #274441;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.animation {
+    animation: fadeIn 2s;
+}
