@@ -68,7 +68,8 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     font-family: 'Basic';
     font-size: 20px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 4px rgba(0, 0, 0, .7);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); */
 }
 
 .cards .card img {

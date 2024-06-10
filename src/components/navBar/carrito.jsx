@@ -1,12 +1,19 @@
+import { useContext } from "react";
 import CarritoVacio from "../../assets/icons/carritoVacio";
+import { Link } from "react-router-dom"
+import { CartContext } from "../../context/CartContext";
+// import { CartContext } from "../../context/CartContext";
 // import CarritoLleno from "../../assets/icons/carritoLleno";
 
-
-const Carrito = () => {
+const CartWidget = () => {
+  const {handleQuantity} = useContext(CartContext)
 
   return (
     <div>
-    <a to={""}> <CarritoVacio /></a>
+      <Link to={"/cart"}>
+        <CarritoVacio />
+        <div className="notification">{handleQuantity()}</div>
+      </Link>
     </div>
   )
 // } else {
@@ -18,4 +25,4 @@ const Carrito = () => {
 // }
 }
 
-export default Carrito;
+export default CartWidget;
