@@ -21,6 +21,7 @@ const ItemDetailContainer = () => {
   return (
     <>
       {product ? (
+        <div className="detail-warp">
         <div className="detail-container">
           <div className="detail-description">
           <h2 className="title">{product.name}</h2>
@@ -33,6 +34,7 @@ const ItemDetailContainer = () => {
           <div className="detail-image">
           {product.image && <img src={product.image} alt={product.name} />}
           </div>
+        </div>
         </div>
       ) : (
         <div className="load-container">
