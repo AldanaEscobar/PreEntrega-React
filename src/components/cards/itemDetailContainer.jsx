@@ -1,35 +1,40 @@
-import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "../../styles/itemlist.css";
 import "../../styles/counter.css";
 import "../../styles/itemDetail.css";
 import productsData from "../../data/products.json";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetailContainer = () => {
   let [product, setProduct] = useState(undefined);
   let { itemId } = useParams();
+  const { cart, handleAddToCart } = useContext(CartContext)
+  // const [modal, setModal] = useState(false); 
+
 
   useEffect(() => {
     setProduct(productsData.find((prod) => prod.id === itemId));
   }, [itemId]);
 
-  console.log(itemId);
 
   return (
     <>
       {product ? (
+        <div className="detail-warp">
         <div className="detail-container">
           <div className="detail-description">
           <h2 className="title">{product.name}</h2>
           <p className="produt-description">{product.longDescription}</p>
           <div className="price-container">
           <p className="card-price">{product.price} USD</p>
-          <Link className="default-button buttton-1" to={`/item/${product.id}`}><span>Es para mi!</span></Link>
+          <button className="default-button buttton-1" to={`/item/${product.id}`} onClick={() => handleAddToCart(product)}><span>Es para mi!</span></button>
           </div>
           </div>
           <div className="detail-image">
           {product.image && <img src={product.image} alt={product.name} />}
           </div>
+        </div>
         </div>
       ) : (
         <div className="load-container">

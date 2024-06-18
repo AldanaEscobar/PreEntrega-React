@@ -1,6 +1,6 @@
 import { Link,  NavLink } from 'react-router-dom';
 import { useState } from "react";
-import Carrito from "./carrito.jsx";
+import CartWidget from './carrito.jsx';
 
 const Menu = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -34,8 +34,7 @@ const Menu = () => {
         <NavLink to="/proximamente" className="a" activeclassname="active">BLOG</NavLink>
         </li>
         <li className="navbar-menu-item">
-           <NavLink className="a"> <Carrito />
-           <div className="notification">1</div>
+           <NavLink className="a"> <CartWidget />
            </NavLink>
         </li>
       </ul>
