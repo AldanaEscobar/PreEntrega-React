@@ -26,7 +26,7 @@ const Cart = () => {
                 <div className="product-container">
                   <img src={item.image} alt={item.name} className="cart-image" />
                   <div className="cart-description">
-                    <h4 className="produt-description">{item.name}</h4>
+                    <h4 className="product-description">{item.name}</h4>
                     <p className="card-price detail-price">USD {item.price}</p>
                     <div className="button-container">
                       <button className="btn-cart view" onClick={() => cart.view(item.id)}>Ver producto</button>
@@ -40,7 +40,7 @@ const Cart = () => {
           <div className="cart-total-container">
           {cart.map((item) => (
               <div key={item.id}>
-          <p className="produt-description">{item.name}</p>
+          <p className="product-description">{item.name}</p>
           <p className="card-price detail-price">USD {item.price}</p>
           </div>
           ))}
