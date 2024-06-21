@@ -78,6 +78,7 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
     z-index: -1;
+    object-fit: cover;
 }
 
 .cards .card .button-container {
@@ -102,7 +103,7 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .cards .card:after {
-    position: absolute; /* .abs */
+    position: absolute;
     content: '';
     z-index: 10;
     width: 200%;
