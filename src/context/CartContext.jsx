@@ -3,7 +3,6 @@ import { createContext, useEffect, useState } from 'react';
 export const CartContext = createContext();
 
 const InitialCart = JSON.parse(localStorage.getItem('cart')) || [];
-console.log(localStorage)
 
 // eslint-disable-next-line react/prop-types
 const CartProvider = ({ children }) => {
@@ -32,8 +31,16 @@ const CartProvider = ({ children }) => {
     });
   };
 
+  const deleteCart = () => {
+    setCart([]);
+  }
+
   const handleQuantity = () => {
     return cart.reduce((total, item) => total + item.quantity, 0);
+  };
+
+  const total = () => {
+    return cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
   };
 
   useEffect(() => {
@@ -41,7 +48,7 @@ const CartProvider = ({ children }) => {
   }, [cart]);
 
   return (
-    <CartContext.Provider value={{ cart, handleAddToCart, removeItem, handleQuantity }}>
+    <CartContext.Provider value={{ cart, handleAddToCart, removeItem, handleQuantity, deleteCart, total }}>
       {children}
     </CartContext.Provider>
   );

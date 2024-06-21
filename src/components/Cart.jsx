@@ -4,12 +4,14 @@ import '../../src/styles/ItemListContainer.css';
 import '../styles/itemDetail.css';
 
 const Cart = () => {
-  const { cart, removeItem } = useContext(CartContext);
-
-  const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+  const { cart, removeItem, deleteCart, total } = useContext(CartContext);
 
   const handleViewProducts = () => {
     window.location.href = '/';
+  };
+
+  const handlePay = () => {
+    window.location.href = '/checkout';
   };
 
   const handleViewProduct = (item) => {
@@ -46,6 +48,7 @@ const Cart = () => {
                       </div>
                     </div>
                   </div>
+                  <button className="default-button buttton-1" onClick={() => deleteCart()}>Vaciar carrito</button>
                 </div>
               ))}
             </div>
@@ -58,8 +61,8 @@ const Cart = () => {
                 </div>
               ))}
               <h4>TOTAL:</h4>
-              <h4 className="card-price detail-price">USD {total}</h4>
-              <button className="default-button buttton-1">Ir a pagar</button>
+              <h4 className="card-price detail-price">USD {total()}</h4>
+              <button className="default-button buttton-1" onClick={() => handlePay()}>Ir a pagar</button>
             </div>
           </div>
         </>
