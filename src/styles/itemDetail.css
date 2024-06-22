@@ -53,30 +53,32 @@
 }
 
 .cart-wrap {
+  flex-direction: column-reverse;
   display: flex;
 }
 
 .cart-detail-container {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  margin: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 30px rgba(0,0,0,0.6);
   height: auto;
-  width: 50%;
+  width: auto;
 }
 
 .product-container {
+  align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-around;
   margin: 20px;
 }
 
 .cart-image {
-  width: 150px;
-  height: 200px;
+  width: 250px;
+  height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -91,7 +93,9 @@
 .detail-price {
   padding: 0 12px;
   color: #274441;
+  font-size: 16px;
   text-shadow: none;
+  text-align: justify;
 }
 
 .button-container {
@@ -110,21 +114,53 @@
 .btn-cart:hover {
   font-weight: 550;
 }
-.deleted {}
-.product {}
 
 .cart-total-container {
   display: flex;
-  width: 50%;
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 0;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.product-quantity {
+  font-family: 'Basic';
+  color:#274441;
+  font-size: 14px;
+  margin: 0 12px;
+}
+
+.product-total {
+  font-family: 'Basic';
+  color:#274441;
+  font-size: 20px;
+  margin: 12px;
+}
+
+.buttons-wrap {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.card-quantity {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
   
   .detail-image img {
     max-width: 500px;
+  }
+  .cart-description {
+    align-items: center;
+  }
+  .cart-image {
+    width: 400px;
+    height: auto;
   }
 }
 
@@ -137,8 +173,52 @@
     width: 45%;
   }
 
+  .cart-image {
+    width: 280px;
+    height: auto;
+  }
+
   .detail-image img {
     max-width: 380px;
   }
+  .cart-total-container {
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+.cart-wrap {
+  flex-direction: row;
+}
+.cart-detail-container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  height: auto;
+  width: 50%;
 }
 
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+.buttons-wrap {
+  justify-content: flex-start;
+}
+
+.button-container {
+  justify-content: flex-start;
+}
+.card-quantity {
+  justify-content: flex-start;
+}
+
+.cart-description {
+  align-items: flex-start;
+}
+}

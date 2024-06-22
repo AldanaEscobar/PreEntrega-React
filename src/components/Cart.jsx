@@ -40,8 +40,10 @@ const Cart = () => {
                     <img src={item.image} alt={item.name} className="cart-image" />
                     <div className="cart-description">
                       <h4 className="product-description">{item.name}</h4>
+                      <div className="card-quantity">
                       <p className="card-price detail-price">USD {item.price}</p>
                       <p className="product-quantity">Cantidad: {item.quantity}</p>
+                      </div>
                       <div className="button-container">
                         <button className="btn-cart" onClick={() => handleViewProduct(item)}>Ver producto</button>
                         <button className="btn-cart" onClick={() => removeItem(item.id)}>Eliminar</button>
@@ -55,12 +57,13 @@ const Cart = () => {
               {cart.map((item) => (
                 <div key={item.id}>
                   <p className="product-description">{item.name}</p>
+                  <div className="card-quantity">
                   <p className="card-price detail-price">USD {item.price}</p>
                   <p className="product-quantity">Cantidad: {item.quantity}</p>
+                  </div>
                 </div>
               ))}
-              <h4>TOTAL:</h4>
-              <h4 className="card-price detail-price">USD {total()}</h4>
+              <h4 className="product-total">TOTAL: USD {total()}</h4>
               <div className="buttons-wrap">
               <button className="default-button buttton-1" onClick={() => handlePay()}>Ir a pagar</button>
               <button className="btn-cart" onClick={() => deleteCart()}>Vaciar carrito</button>
