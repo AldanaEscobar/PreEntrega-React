@@ -20,12 +20,12 @@
 }
 
 .cards .card {
-    position: relative;
-    margin: 20px;
-    width: 280px;
-    height: 350px;
-    overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    height: 350px;
+    margin: 20px;
+    max-width: 280px;
+    overflow: hidden;
+    position: relative;
     transform-origin: center top;
     transform-style: preserve-3d;
     transform: translateZ(0);
@@ -327,5 +327,12 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     }
     100% {
       transform: translate(0, 0);
+    }
+  }
+
+
+  @media screen and (min-width: 600px) {
+    .title {
+     text-align: justify;
     }
   }

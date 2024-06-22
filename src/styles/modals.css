@@ -1,0 +1,45 @@
+/* src/styles/modalStyles.css */
+
+.custom-swal-title {
+    font-size: 24px;
+    color: #274441;
+    font-family: 'Basic';
+  }
+  
+  .custom-swal-text {
+    font-size: 18px;
+    color: #274441;
+    font-family: 'Basic';
+  }
+  
+  .custom-confirm-button {
+    font-size: 16px;
+    font-family:  'Basic';
+    background-color: #274441 !important;
+    color: white !important;
+  }
+  
+  .custom-cancel-button {
+    font-size: 16px;
+    font-family: 'Basic';
+    background-color: #d33 !important;
+    color: white !important;
+  }
+
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    background-color: #f8fffe !important;
+    width: 20em !important;
+  }
+
+  div:where(.swal2-container) .swal2-html-container {
+    color: #274441 !important;
+    font-family: 'Basic' !important;
+  }
+
+  .custom-swal-popup {
+    width: 30em !important;
+  }
+
+  .custom-swal-popup-small {
+    width: 20em !important;
+  }

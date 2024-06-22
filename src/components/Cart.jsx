@@ -31,7 +31,7 @@ const Cart = () => {
         </div>
       ) : (
         <>
-          <h3 className="title">Estas por comprar: </h3>
+          <h3 className="title"> Tu compra: </h3>
           <div className="cart-wrap">
             <div className="cart-detail-container">
               {cart.map((item) => (
@@ -43,12 +43,11 @@ const Cart = () => {
                       <p className="card-price detail-price">USD {item.price}</p>
                       <p className="product-quantity">Cantidad: {item.quantity}</p>
                       <div className="button-container">
-                        <button className="btn-cart view" onClick={() => handleViewProduct(item)}>Ver producto</button>
-                        <button className="btn-cart delete" onClick={() => removeItem(item.id)}>Eliminar</button>
+                        <button className="btn-cart" onClick={() => handleViewProduct(item)}>Ver producto</button>
+                        <button className="btn-cart" onClick={() => removeItem(item.id)}>Eliminar</button>
                       </div>
                     </div>
                   </div>
-                  <button className="default-button buttton-1" onClick={() => deleteCart()}>Vaciar carrito</button>
                 </div>
               ))}
             </div>
@@ -62,7 +61,10 @@ const Cart = () => {
               ))}
               <h4>TOTAL:</h4>
               <h4 className="card-price detail-price">USD {total()}</h4>
+              <div className="buttons-wrap">
               <button className="default-button buttton-1" onClick={() => handlePay()}>Ir a pagar</button>
+              <button className="btn-cart" onClick={() => deleteCart()}>Vaciar carrito</button>
+              </div>
             </div>
           </div>
         </>

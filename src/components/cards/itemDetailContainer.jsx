@@ -6,6 +6,7 @@ import "../../styles/itemDetail.css";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../firebase/config.js";
 import { doc, getDoc } from "firebase/firestore";
+// import BackArrow from "../../assets/icons/BackArrow.jsx";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState(undefined);
@@ -32,6 +33,9 @@ const ItemDetailContainer = () => {
     <>
       {product ? (
         <div className="detail-warp">
+          {/* <Link to={`/`} className="arrow">
+          <BackArrow />
+          </ Link> */}
           {/* <nav className="clean">
             <div className="nav-wrapper">
               <div className="col s12">
