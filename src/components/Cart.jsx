@@ -27,7 +27,7 @@ const Cart = () => {
       {cart.length === 0 ? (
         <div className="empty-cart-container">
           <h3 className="title">Todavía no hay productos seleccionados :(</h3>
-          <button className="btn-view-products" onClick={handleViewProducts}>Ver productos</button>
+          <button className="default-button buttton-1" onClick={handleViewProducts}><span>Ver productos</span></button>
         </div>
       ) : (
         <>
@@ -65,7 +65,7 @@ const Cart = () => {
               ))}
               <h4 className="product-total">TOTAL: USD {total()}</h4>
               <div className="buttons-wrap">
-              <button className="default-button buttton-1" onClick={() => handlePay()}>Ir a pagar</button>
+              <button className="default-button buttton-1" onClick={() => handlePay()}><span>Ir a pagar</span></button>
               <button className="btn-cart" onClick={() => showModal()}>Vaciar carrito</button>
               </div>
             </div>

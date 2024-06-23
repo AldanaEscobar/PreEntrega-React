@@ -1,13 +1,22 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { useForm } from 'react-hook-form';
+import { ErrorMessage } from "@hookform/error-message";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
+import '../styles/checkout.css'
 
 const Checkout = () => {
     const { cart, deleteCart, total } = useContext(CartContext);
-    const { register, handleSubmit } = useForm();
+    const {
+        register,
+        formState: { errors },
+        handleSubmit,
+      } = useForm();
     const [pedidoId, setPedidoId] = useState('');
+    const handleViewProducts = () => {
+        window.location.href = '/';
+      };
 
     const comprar = (data) => {
         const pedido = {
@@ -28,21 +37,36 @@ const Checkout = () => {
         return (
             <div className="container">
                 <h2 className="title">Gracias por tu compra!</h2>
-                <h3>El ID de tu pedido es: {pedidoId}</h3>
-                <button className="enviar" onClick={() => deleteCart()}>Seguir comprando</button>
-                </div>
+                <p className="product-description">Puedes hacer el seguimiento de tu compra con el ID: <span className="span-id">{pedidoId}</span></p>
+                <button className="default-button button-1" onClick={() => {deleteCart(); handleViewProducts(); }}>Volver a la tienda</button>
+            </div>
         )
     }
 
-
     return (
         <div className="container">
-            <h2 className="title">Finalizar compra</h2>
-            <form className="formulario" onSubmit={handleSubmit(comprar)}>
-                <input type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />
-                <input type="email" placeholder="Ingresá tu e-mail" {...register("email")} />
-                <input type="phone" placeholder="Ingresá tu teléfono" {...register("telefono")} />
-                <button className="enviar" type="submit">Comprar</button>
+            <h2 className="title">Ultimo paso para finalizar su compra</h2>
+            <form className="checkout-form" onSubmit={handleSubmit(comprar)}>
+                <div></div>
+                <input type="text" placeholder="Como quieres que te llamemos?" 
+                    {...register("nombre", {required: "Este campo es requerido"})} 
+                    className="checkout-input" 
+                />
+                <ErrorMessage errors={errors} name="nombre" as="p" className="error-message" />
+
+                <input type="email" placeholder="En que mail quieres recibir las guias?" 
+                    {...register("email", {required: "Este campo es requerido"})} 
+                    className="checkout-input" 
+                />
+                <ErrorMessage errors={errors} name="email" as="p" className="error-message" />
+
+                <input type="phone" placeholder="Ingresá un telefono de contacto" 
+                    {...register("telefono", { required: "Este campo es requerido" })} 
+                    className="checkout-input" 
+                />
+                <ErrorMessage errors={errors} name="telefono" as="p" className="error-message" />
+
+                <button className="buttton-1 default-button" type="submit"><span>Comprar</span></button>
             </form>
         </div>
     );
