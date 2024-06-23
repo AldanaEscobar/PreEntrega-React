@@ -4,7 +4,7 @@ import '../../src/styles/ItemListContainer.css';
 import '../styles/itemDetail.css';
 
 const Cart = () => {
-  const { cart, removeItem, deleteCart, total } = useContext(CartContext);
+  const { cart, removeItem, showModal, total } = useContext(CartContext);
 
   const handleViewProducts = () => {
     window.location.href = '/';
@@ -66,7 +66,7 @@ const Cart = () => {
               <h4 className="product-total">TOTAL: USD {total()}</h4>
               <div className="buttons-wrap">
               <button className="default-button buttton-1" onClick={() => handlePay()}>Ir a pagar</button>
-              <button className="btn-cart" onClick={() => deleteCart()}>Vaciar carrito</button>
+              <button className="btn-cart" onClick={() => showModal()}>Vaciar carrito</button>
               </div>
             </div>
           </div>

@@ -47,7 +47,7 @@ const CartProvider = ({ children }) => {
     });
   };
 
-  const deleteCart = () => {
+  const showModal = () => {
     showConfirmationModal(false).then((result) => {
       if (result.isConfirmed) {
         setCart([]);
@@ -64,6 +64,10 @@ const CartProvider = ({ children }) => {
     });
   };
 
+  const deleteCart = () => {
+    setCart([]);
+  };
+
   const handleQuantity = () => {
     return cart.reduce((total, item) => total + item.quantity, 0);
   };
@@ -77,7 +81,7 @@ const CartProvider = ({ children }) => {
   }, [cart]);
 
   return (
-    <CartContext.Provider value={{ cart, handleAddToCart, removeItem, handleQuantity, deleteCart, total }}>
+    <CartContext.Provider value={{ cart, handleAddToCart, removeItem, handleQuantity, deleteCart, total, showModal }}>
       {children}
     </CartContext.Provider>
   );

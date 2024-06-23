@@ -1,7 +1,9 @@
 // src/utils/modals.js
 
-import Swal from 'sweetalert2';
-import '../../styles/modals.css';
+import Swal from "sweetalert2";
+import "../../styles/modals.css";
+// import { useContext } from 'react';
+// import { CartContext } from '../../context/CartContext';
 
 // Confirmation toast
 export const showConfirmationModal = (isRemoveItem) => {
