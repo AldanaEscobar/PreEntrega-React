@@ -7,6 +7,9 @@
   .default-button {
     width: 150px;
   }
+  .product-description {
+    text-align: center;
+  }
 }
 .checkout-form {
   margin: 12px;
