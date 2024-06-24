@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import '../../src/styles/ItemListContainer.css';
 import '../styles/itemDetail.css';
+import '../styles/counter.css'
 
 const Cart = () => {
   const { cart, removeItem, showModal, total } = useContext(CartContext);
@@ -27,7 +28,7 @@ const Cart = () => {
       {cart.length === 0 ? (
         <div className="empty-cart-container">
           <h3 className="title">Todavía no hay productos seleccionados :(</h3>
-          <button className="default-button buttton-1" onClick={handleViewProducts}><span>Ver productos</span></button>
+          <button className="button-2 link-button" onClick={handleViewProducts}>Ver productos</button>
         </div>
       ) : (
         <>

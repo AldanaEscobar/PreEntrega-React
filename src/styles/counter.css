@@ -35,6 +35,11 @@
     color: white;
 }
 
+.button-2 {
+    color: #274441;
+    border: none;
+    background: transparent;
+}
 .link-button {
     font-family: 'Basic';
     font-size: 16px;

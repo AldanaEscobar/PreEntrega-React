@@ -38,7 +38,7 @@ const Checkout = () => {
             <div className="container">
                 <h2 className="title">Gracias por tu compra!</h2>
                 <p className="product-description">Puedes hacer el seguimiento de tu compra con el ID: <span className="span-id">{pedidoId}</span></p>
-                <button className="default-button button-1" onClick={() => {deleteCart(); handleViewProducts(); }}>Volver a la tienda</button>
+                <button className="default-button button-1" onClick={() => {deleteCart(); handleViewProducts(); }}><span>Volver a la tienda</span></button>
             </div>
         )
     }
