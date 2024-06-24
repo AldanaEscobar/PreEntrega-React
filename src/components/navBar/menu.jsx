@@ -13,17 +13,17 @@ const Menu = () => {
     <div className="navbar-menu">
       <ul className="navbar-menu-container ul">
         <li className="navbar-menu-item">
-          <NavLink to="" className="a" activeclassname="active" onClick={toggleDropdown}>
+          <NavLink className="a" activeclassname="active" onClick={toggleDropdown}>
             GUIAS DE VIAJE
           </NavLink>
           {dropdownVisible && (
             <ul className="dropdown-menu">
-              <li className="dropdown-item"><Link to="/category/bolivia" className="">Bolivia</Link></li>
-              <li className="dropdown-item"><Link to="/category/ecuador" className="">Ecuador</Link></li>
-              <li className="dropdown-item"><Link to="/category/peru" className="">Peru</Link></li>
-              <li className="dropdown-item"><Link to="/category/uruguay" className="">Uruguay</Link></li>
-              <li className="dropdown-item"><Link to="/category/nomadedigital" className="">Nomades Digitales</Link></li>
-              <li className="dropdown-item"><Link to="/" className="">Ver todo</Link></li>
+              <li className="dropdown-item"><Link to="/category/bolivia" className="" onClick={dropdownVisible}>Bolivia</Link></li>
+              <li className="dropdown-item"><Link to="/category/ecuador" className="" onClick={dropdownVisible}>Ecuador</Link></li>
+              <li className="dropdown-item"><Link to="/category/peru" className="" onClick={dropdownVisible}>Peru</Link></li>
+              <li className="dropdown-item"><Link to="/category/uruguay" className="" onClick={dropdownVisible}>Uruguay</Link></li>
+              <li className="dropdown-item"><Link to="/category/nomadedigital" className="" onClick={dropdownVisible}>Nomades Digitales</Link></li>
+              <li className="dropdown-item"><Link to="/" className="" onClick={dropdownVisible}>Ver todo</Link></li>
             </ul>
           )}
           </li>

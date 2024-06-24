@@ -4,13 +4,15 @@ import "../../styles/itemlist.css";
 import "../../styles/counter.css";
 import "../../styles/itemDetail.css";
 import { CartContext } from "../../context/CartContext";
-import { db } from '../../firebase/config.js';
+import { db } from "../../firebase/config.js";
 import { doc, getDoc } from "firebase/firestore";
+// import BackArrow from "../../assets/icons/BackArrow.jsx";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState(undefined);
   const { itemId } = useParams();
   const { handleAddToCart } = useContext(CartContext);
+  // const { cart } = useContext(CartContext);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -31,6 +33,24 @@ const ItemDetailContainer = () => {
     <>
       {product ? (
         <div className="detail-warp">
+          {/* <Link to={`/`} className="arrow">
+          <BackArrow />
+          </ Link> */}
+          {/* <nav className="clean">
+            <div className="nav-wrapper">
+              <div className="col s12">
+                <a href="#!" className="breadcrumb">
+                  Tienda
+                </a>
+                <a href="#!" className="breadcrumb">
+                  Categoria
+                </a>
+                <a href="#!" className="breadcrumb">
+                  Producto
+                </a>
+              </div>
+            </div>
+          </nav> */}
           <div className="detail-container">
             <div className="detail-description">
               <h2 className="title">{product.name}</h2>
@@ -51,12 +71,14 @@ const ItemDetailContainer = () => {
           </div>
         </div>
       ) : (
+        <div className="loader-wrap">
         <div className="load-container">
           <div className="loader">
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
           </div>
+        </div>
         </div>
       )}
     </>

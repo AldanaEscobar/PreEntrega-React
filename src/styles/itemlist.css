@@ -20,12 +20,12 @@
 }
 
 .cards .card {
-    position: relative;
-    margin: 20px;
-    width: 280px;
-    height: 350px;
-    overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    height: 350px;
+    margin: 20px;
+    max-width: 280px;
+    overflow: hidden;
+    position: relative;
     transform-origin: center top;
     transform-style: preserve-3d;
     transform: translateZ(0);
@@ -78,6 +78,7 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
     z-index: -1;
+    object-fit: cover;
 }
 
 .cards .card .button-container {
@@ -85,24 +86,20 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     bottom: 0;
     left: 0;
     right: 0;
-    /* padding: 20px;
-    padding-bottom: 10px; */
     font-size: 20px;
     background: none;
     color: #fff;
     transform: translateY(100%);
-    transition: 0.3s;
-    /* background-color: #274441; */
-    /* width: 100%; */
-    background: linear-gradient(to top, #274441, #274441 25% ,#274441 10%, transparent);
+    transition: 0.3s;    background: linear-gradient(to top, #274441, #274441 25% ,#274441 10%, transparent);
     margin: 0;
     padding-bottom: 20px;
     height: 150px;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .cards .card:after {
-    position: absolute; /* .abs */
+    position: absolute;
     content: '';
     z-index: 10;
     width: 200%;
@@ -241,6 +238,10 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 
 
 /* LOADER */
+.loader-wrap {
+  display: flex;
+  justify-content: center;
+}
 
 .load-container {
     float: left;
@@ -326,5 +327,12 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     }
     100% {
       transform: translate(0, 0);
+    }
+  }
+
+
+  @media screen and (min-width: 600px) {
+    .title {
+     text-align: justify;
     }
   }
