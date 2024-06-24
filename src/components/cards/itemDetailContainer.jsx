@@ -71,12 +71,14 @@ const ItemDetailContainer = () => {
           </div>
         </div>
       ) : (
+        <div className="loader-wrap">
         <div className="load-container">
           <div className="loader">
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
           </div>
+        </div>
         </div>
       )}
     </>

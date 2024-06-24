@@ -86,20 +86,16 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
     bottom: 0;
     left: 0;
     right: 0;
-    /* padding: 20px;
-    padding-bottom: 10px; */
     font-size: 20px;
     background: none;
     color: #fff;
     transform: translateY(100%);
-    transition: 0.3s;
-    /* background-color: #274441; */
-    /* width: 100%; */
-    background: linear-gradient(to top, #274441, #274441 25% ,#274441 10%, transparent);
+    transition: 0.3s;    background: linear-gradient(to top, #274441, #274441 25% ,#274441 10%, transparent);
     margin: 0;
     padding-bottom: 20px;
     height: 150px;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .cards .card:after {
@@ -242,6 +238,10 @@ text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
 
 
 /* LOADER */
+.loader-wrap {
+  display: flex;
+  justify-content: center;
+}
 
 .load-container {
     float: left;
