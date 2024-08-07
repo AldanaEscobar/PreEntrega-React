@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+
+/* MOBILE */
+.general-navbar {
+  margin: 0 16px 0 16px;
+  border-bottom: #274441 solid 1px;
+  box-shadow: 0 10px 10px -10px #274441;
+}
+
+.branch-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.branch-name:hover {
+  font-weight: 600;
+}
+
+
+.branch-name {
+  color: #274441;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  font-weight: 520;
+}
+
+.branch-icon path {
+  fill: #274441;
+  stroke: #274441;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 11px 6px;
+  gap: 6px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+}
+
+.search-input::placeholder {
+  text-align: center;
+}
+
+.search-input {
+  border-radius: 100px;
+  border: solid 1px #ffffff;
+  height: 28px;
+  width: 9rem;
+}
+
+.search-button {
+  background-color: #274441;
+  height: 28px;
+  border: solid 1px #274441;
+}
+
+.navbar-menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 6px;
+  position: sticky;
+  top: 40px;
+  color: #274441;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 11px;
+}
+
+.navbar-menu-item {
+  list-style-type: none;
+  font-size: 14px;
+  color: #274441;
+}
+
+.navbar-menu-item svg {
+  width: 30px;
+  height: 20px;
+}
+
+.button-default:-webkit-any-link {
+  text-decoration: none;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.li {
+  list-style: none;
+  color:#274441;
+}
+a {
+  text-decoration: none;
+  color:#274441;
+}
+
+.a {
+  display: block;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.a:before {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #fa9237;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.a:after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #fa8576;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.navbar-menu-item > .a:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+.navbar-menu-item > .a:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}
+
+
+.notification {
+  font-weight: bold;
+  display: flex;
+  background-color: #fa9237;
+  border-radius: 100%;
+  font-size: 10px;
+  height: 14px;
+  width: 14px;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  align-items: center;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+  .general-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .search-section {
+    justify-content: space-evenly;
+    padding: 0;
+    width: 220px;
+  }
+
+  .search-container {
+    gap: 11px;
+  }
+
+  .search-input {
+    width: 25rem;
+  }
+
+  .navbar-menu-item {
+    font-size: 18px;
+  }
+
+  .branch-name {
+    font-size: 15px;
+  }
+
+  .navbar-menu-container {
+    margin: 6px 12px;
+    padding-bottom: 0;
+  }
+
+  .ul {
+    gap: 30px;
+  }
+
+  .navbar-menu-item svg {
+    width: 40px;
+    height: 22px;
+  }
+
+  .notification {
+    top: -5px;
+    left: 26px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px) {
+  .general-navbar {
+    justify-content: space-around;
+  }
+
+  .branch-name {
+    z-index: 2;
+    font-size: 17px;
+    letter-spacing: 0.3rem;
+  }
+  .search-input {
+    width: 30rem;
+  }
+
+  .navbar-menu-item {
+    font-size: 20px;
+  }
+  .navbar-menu-container {
+    margin: 6px 18px;
+  }
+}
+/* DROPDOWN */
+ul .dropdown-menu{
+  z-index: 15;
+}
+.dropdown-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #274441;
+  border-radius: 5px;
+  padding: 6px;
+  top: 30px;
+  width: 150px;
+}
+
+.dropdown-item {
+  color: #fff;
+  list-style-type: none;
+  font-family: 'Basic';
+  font-size: 14px;
+  padding: 2.5px;
+}
+
+
+.dropdown-item a:-webkit-any-link:hover {
+color: #fa8576;
+}
+
+.dropdown-item a:-webkit-any-link {
+  color: #fff;
+}
